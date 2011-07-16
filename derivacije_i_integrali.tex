@@ -1,0 +1,136 @@
+\documentclass[12pt,oneside,a4paper]{report}
+% \linespread{1.3}
+\title{derivacije i integrali}
+% \renewcommand{\familydefault}{cmss}
+\renewcommand{\arraystretch}{1.9}
+\usepackage[croatian]{babel}
+% \usepackage[dvips]{color}
+% \usepackage[dvips]{rotating}
+% \usepackage{epsfig}
+\usepackage{floatflt}
+\addtolength{\hoffset}{-2cm}
+\addtolength{\voffset}{-2.5cm}
+\addtolength{\textwidth}{3cm}
+\addtolength{\textheight}{4cm}
+\pagestyle{empty}
+
+\begin{document}
+\noindent
+
+\begin{center}
+\fbox{\fbox{{\Large \textbf{Derivacije}}}}
+\end{center}
+
+\vspace{5mm}
+\noindent
+\underline{\textbf{Osnovna pravila deriviranja:}}\\
+\begin{itemize}
+\item derivacija konstante: \fbox{$\displaystyle c'=0$}
+\item derivacija umno\v{s}ka konstante i funkcije: \fbox{$\displaystyle (c\cdot f)'=c\cdot f'$}
+\item derivacija zbroja i razlike: \fbox{$\displaystyle (f\pm g)'=f'\pm g'$}
+\item derivacija umno\v{s}ka: \fbox{$\displaystyle (f\cdot g)'=f'\cdot g+f\cdot g'$}
+\hspace{5mm}
+\fbox{$\displaystyle (f\cdot g\cdot h)'=f'gh+fg'h+fgh'$}
+\item derivacija produkta: \fbox{$\displaystyle \left( \frac fg\right)'=\frac{f'\cdot g-f\cdot g'}{g^2} $}
+\end{itemize}
+
+\vspace{4mm}
+\noindent
+\underline{\textbf{Derivacije elemetarnih funkcija:}}\\
+\begin{center}
+\begin{tabular}{|rcl|rcl|}
+\hline
+$\displaystyle x'$  & = &  $1$ & $(x^n)'$  & = &  $n\cdot x^{n-1}$\\ 
+$\displaystyle \left(\frac 1x\right)'$  & = &  $\displaystyle -\frac 1{x^2}$ & $\displaystyle \left(\frac 1{x^n}\right)'$  & = &  $\displaystyle -\frac n{x^{n+1}}$\\ 
+$\displaystyle \left(\sqrt{x}\right)'$  & = &  $\displaystyle \frac1{2\sqrt x}$ & $\displaystyle
+\left(\sqrt[n]{x}\right)'$  & = &  $\displaystyle \frac1{n\cdot \sqrt[n]{x^{n-1}}}$\\ 
+\hline
+$\displaystyle \left(e^x\right)'$  & = &  $\displaystyle e^x$ & $\displaystyle \left(a^x\right)'$  & = &  $\displaystyle a^x\cdot \ln a$\\ 
+$\displaystyle (\ln x)'$  & = &  $\displaystyle \frac 1x$ & $\displaystyle (\log_a x)'$  & = &  $\displaystyle \frac 1{x \cdot \ln a}$\\ 
+\hline
+$\displaystyle (\sin x)'$  & = &  $\displaystyle \cos x$ & $\displaystyle (\cos x)'$  & = &  $\displaystyle -\sin x$\\
+$\displaystyle (\textrm{tg}\hspace{1mm}x)'$  & = &  $\displaystyle \frac 1{\cos ^2 x}$ & $\displaystyle (\textrm{cg}\hspace{1mm}x)'$  & = &  $\displaystyle \frac 1{\sin ^2 x}$\\
+$\displaystyle (\sin^{-1} x)'$  & = &  $\displaystyle \frac1{\sqrt{1-x^2}}$ & $\displaystyle (\cos^{-1} x)'$  & = &  $\displaystyle -\frac1{\sqrt{1-x^2}}$ \\
+$\displaystyle (\textrm{tg}^{-1}\hspace{1mm}x)'$  & = &  $\displaystyle \frac1{1+x^2}$ & $\displaystyle (\textrm{ctg}^{-1}\hspace{1mm}x)'$  & = &  $\displaystyle -\frac1{1+x^2}$\\
+\hline
+$\displaystyle (\sinh x)'$  & = &  $\displaystyle \cosh x$ & $\displaystyle (\cosh x)'$  & = &  $\displaystyle \sinh x$\\
+$\displaystyle (\textrm{tgh}\hspace{1mm}x)'$ & = & $\displaystyle \frac1{\cosh^2x}$ & $\displaystyle (\textrm{ctgh}\hspace{1mm}x)'$ & = & $\displaystyle -\frac1{\sinh^2x}$\\
+$\displaystyle (\textrm{sinh}^{-1}\hspace{1mm}x)'$ & = & $\displaystyle \frac1{\sqrt{1+x^2}}$ & $\displaystyle (\textrm{tgh}^{-1}\hspace{1mm}x)'$ & = & $\displaystyle \frac1{1-x^2}$\\
+$\displaystyle (\cosh^{-1}\hspace{1mm}x)'$ & = & $\displaystyle \frac1{\sqrt{x^2-1}}$ & $\displaystyle (\textrm{ctgh}^{-1}\hspace{1mm}x)'$ & = & $\displaystyle -\frac1{x^2-1}$\\
+\hline
+\end{tabular}
+\end{center}
+
+\hfill{\fbox{\tiny{v1.0 by \textsf{tkr}}}}
+\newpage
+\begin{center}
+\fbox{\fbox{{\Large \textbf{Integrali}}}}
+\end{center}
+
+\noindent
+\textbf{\underline{Op\'{c}a pravila integriranja:}}
+\begin{itemize}
+\item ako je $\displaystyle \int f(x)\textrm dx =F(x)+c$ tada je $F'=f$
+\item \fbox{$\displaystyle \int c\cdot f(x) \textrm dx=c\cdot \int f(x)\textrm dx$}
+\item\fbox{$\displaystyle \int \textrm dx =x+c$}
+\item integral zbroja i razlike: \fbox{$\displaystyle \int [ f(x)\pm g(x)] \textrm dx = \int f(x) \textrm dx \pm \int g(x) \textrm dx$}
+\item pravilo supstitucije: ako je $x=\varphi (t)$, tada je: 
+	\fbox{$\displaystyle \int f(x)\textrm dx=\int f[\varphi(t)]\cdot \varphi '(t)\textrm dt$}
+\item parcijalna integracija: 
+	\fbox{$\displaystyle \int (f\cdot g')=f\cdot g-\int (f'\cdot g)$}
+\end{itemize}
+
+
+\vspace{3mm}
+\noindent
+\underline{\textbf{Tablica osnovnih integrala}}
+{\scriptsize(kod svakog integrala s desne strane jednakosti treba dodati konstantu $c$)}
+\begin{center}
+\begin{tabular}{|ccl|ccl|}
+\hline
+$\displaystyle \int x^n \textrm dx$ & = & $\displaystyle \frac{x^{n+1}}{n+1}\hspace{2mm} (n\neq 1)$ & 
+$\displaystyle \int \frac{\textrm dx }x$ & = & $\displaystyle \ln |x|$\\
+\hline
+
+$\displaystyle \int e^x\textrm dx $ & = & $\displaystyle e^x$ & $\displaystyle \int a^x\textrm dx
+$ & = & $\displaystyle \frac{a^x}{\ln a}$\\
+\hline
+
+$\displaystyle \int \sin x \hspace{1mm}\textrm dx $ & = & $\displaystyle -\cos x$ & $\displaystyle \int \cos x \hspace{1mm}\textrm dx $ & = & $\displaystyle \sin x$\\
+
+$\displaystyle \int \textrm{tg}\hspace{1mm}x\hspace{1mm}\textrm dx $ & = & $\displaystyle -\ln|\cos x|$  &
+$\displaystyle \int \textrm{ctg}\hspace{1mm}x\hspace{1mm}\textrm dx $ & = & $\displaystyle \ln|\sin x|$\\
+
+$\displaystyle \int \frac{\textrm dx}{\cos^2 x}$ & = & $\displaystyle \textrm{tg}\hspace{1mm}x $  & $\displaystyle \int
+\frac{\textrm dx}{\sin^2 x}$ & = & $\displaystyle -\textrm{ctg}\hspace{1mm}x $\\
+\hline
+
+$\displaystyle \int \sinh x\hspace{1mm}\textrm dx$ & = & $\displaystyle  \cosh x$  & $\displaystyle \int \cosh
+x\hspace{1mm}\textrm dx$ & = & $\displaystyle  \sinh x$\\
+
+$\displaystyle \int \textrm{tgh}\hspace{1mm}x\textrm dx $ & = & $\displaystyle  \ln |\cosh x|$  & $\displaystyle \int
+\textrm{ctgh}\hspace{1mm}x\textrm dx $ & = & $\displaystyle  \ln |\sinh x|$\\
+
+$\displaystyle \int \frac{\textrm dx }{\cosh^2 x}$ & = & $\displaystyle \textrm{tgh}\hspace{1mm}x$  & $\displaystyle
+\int \frac{\textrm dx }{\sinh^2 x}$ & = & $\displaystyle -\textrm{ctgh}\hspace{1mm}x$\\
+\hline
+
+$\displaystyle \int \frac{\textrm dx }{a^2+x^2}$ & = & $\displaystyle \frac 1a \cdot \textrm{tg}^{-1}\frac xa$  & $\displaystyle \int \frac{\textrm dx }{\sqrt{a^2-x^2}}$ & = & $\displaystyle \sin^{-1}\frac xa$\\
+
+$\displaystyle \int \frac{\textrm dx }{a^2-x^2}$ & = & $\displaystyle \frac 1a \cdot \textrm{tgh}^{-1}\frac xa$ & $\displaystyle \int \frac{\textrm dx }{\sqrt{a^2+x^2}}$ & = & $\displaystyle \sinh^{-1}\frac xa$  \\
+
+$\displaystyle \int \frac{\textrm dx }{x^2-a^2}$ & = & $\displaystyle -\frac 1a \cdot \textrm{ctgh}^{-1}\frac xa$ & $\displaystyle \int \frac{\textrm dx }{\sqrt{x^2-a^2}}$ & = & $\displaystyle \cosh^{-1}\frac xa$\\
+\hline
+
+\end{tabular}
+\end{center}
+
+\vspace{3mm}
+\noindent
+\underline{\textbf{Odre\dj{}eni integral:}}
+\begin{itemize}
+\item ako je $F'=f$ onda: \fbox{$\displaystyle \int_a^bf(x)\textrm dx =F(b)-F(a)$}
+\end{itemize}
+
+
+\end{document}

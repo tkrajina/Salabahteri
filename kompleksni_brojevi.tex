@@ -1,0 +1,109 @@
+\documentclass[8pt,oneside,a4paper]{report}
+\linespread{2}
+\title{kompleksni brojevi}
+% \renewcommand{\familydefault}{cmss}
+\usepackage[croatian]{babel}
+% \usepackage[dvips]{color}
+% \usepackage[dvips]{rotating}
+\usepackage{epsfig}
+\usepackage{floatflt}
+\addtolength{\hoffset}{-2cm}
+\addtolength{\voffset}{-2.5cm}
+\addtolength{\textwidth}{3cm}
+\addtolength{\textheight}{4cm}
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{center}
+\fbox{\fbox{{\Large \textbf{Kompleksni brojevi}}}}
+\end{center}
+
+\begin{floatingfigure}[r]{60mm}
+\epsfig{figure=fig/gaussova_ravnina.eps}\\
+\scriptsize{\textbf{slika:} geometrijski prikaz kompleksnog broja}
+\end{floatingfigure}
+\noindent
+\textbf{Imaginarna jedinica} $i$:\hspace{5mm}\fbox{$\displaystyle i=\sqrt{-1}$}
+
+\noindent
+\textbf{Op\'{c}i oblik} kompleksnog broja:\hspace{5mm}
+\fbox{$\displaystyle z=a+b\cdot i$}
+
+\noindent
+\textbf{Konjugirano kompleksni broj} broju $z=a+bi$:\\
+\hspace*{25mm}
+\fbox{$\displaystyle \overline z=a-bi$}
+
+\noindent
+\textbf{Realni i imaginarni dio} kompleksnog broja:\\ 
+\hspace*{25mm}
+	\fbox{$\displaystyle \textrm{Re}(a+b\cdot i)=a$}
+	\hspace{5mm}
+	\fbox{$\displaystyle \textrm{Im}(a+b\cdot i)=b$}
+
+\noindent
+\textbf{Jednakost kompleksnih brojeva}:\\
+	\hspace*{10mm}
+	\fbox{$\displaystyle a+b\cdot i=c+d\cdot i \textrm{ ako je } a=c \textrm{ i } b=d$}
+
+\begin{center}
+\fbox{{\large \textbf{Ra\v{c}unske operacije s kompleksnim brojevima}}}
+\end{center}
+
+\noindent
+\textbf{Zbrajanje i oduzimanje kompleksnih brojeva}:\hspace{5mm}\fbox{$\displaystyle (a+bi)\pm (c+di)=(a\pm c)+(b\pm d)\cdot i$}
+
+% \noindent
+% \textbf{Mno\v{z}enje s konstantom}:\\
+% \hspace*{25mm}
+% \fbox{$\displaystyle \alpha\cdot (a+bi)=\alpha a+\alpha bi$}
+
+\noindent
+\textbf{Mno\v{z}enje kompleksnih brojeva}:\hspace{5mm}\fbox{$\displaystyle (a+bi)\cdot (c+di)=(a\cdot c-b\cdot d)+(a\cdot d+b\cdot c)\cdot i$}
+
+\noindent
+\textbf{Dijeljenje kompleksnih brojeva}:\hspace{5mm}\fbox{$\displaystyle \frac{a+bi}{c+di}=\frac{ac+bd}{c^2+d^2}+\frac{cb-ad}{c^2+d^2}\cdot i$}
+
+\noindent
+\textbf{Potencije imaginarne jedinice}:\hspace{5mm}\fbox{$i^{4n}=1$}
+\hspace{5mm}
+\fbox{$i^{4n+1}=i$}
+\hspace{5mm}
+\fbox{$i^{4n+2}=-1$}
+\hspace{5mm}
+\fbox{$i^{4n+3}=-i$}
+
+\begin{center}
+\fbox{{\large \textbf{Trigonometrijski oblik kompleksnog broja}}}
+\end{center}
+\begin{floatingfigure}[r]{55mm}
+\epsfig{figure=fig/trig_kompl.eps}\\
+\end{floatingfigure}
+\noindent
+\textbf{Trigonometrijski oblik} broja $z=a+bi$:\\
+\hspace*{20mm}\fbox{$\displaystyle z=r\cdot (\cos \varphi +i\cdot \sin \varphi)$}\\
+\hspace*{10mm}$r$\dots modul broja $z$:\hspace{5mm}\fbox{$\displaystyle r=\sqrt{a^2+b^2}$}\\
+\noindent
+\hspace*{10mm}$\varphi$ \dots argument broja $z$:\hspace{5mm}\fbox{$\textrm{tg}\hspace{1mm}\varphi=\frac ba$}
+
+\noindent
+{\scriptsize Neka je $z_k=r_k\cdot (\cos \varphi_k+i\cdot \sin\varphi_k)$ za $k=1,2$}
+
+\noindent
+\textbf{Mno\v{z}enje kompleksnih brojeva}:\hspace{5mm}\fbox{$\displaystyle z_1\cdot z_2=r_1r_2\cdot [\cos(\varphi_1+\varphi_2)+i\cdot \sin(\varphi_1+\varphi_2)]$}
+
+\noindent
+\textbf{Dijeljenje kompleksnih brojeva}:\hspace{5mm}\fbox{$\displaystyle \frac{z_1}{z_2}=\frac{r_1}{r_2}\cdot [\cos(\varphi_1-\varphi_2)+i\cdot \sin(\varphi_1-\varphi_2)]$}
+
+\noindent
+\textbf{Potenciranje kompleksnog broja} $z=r\cdot (\cos \varphi+i\cdot \cdot \sin\varphi)$\\
+\hspace*{25mm}\fbox{$\displaystyle z^n=r^n\cdot  [\cos n\varphi+i\cdot \sin n\varphi]$}
+
+\noindent
+\textbf{Korjenovanje kompleksnog broja} $z=r\cdot (\cos \varphi+i\cdot \sin\varphi)$\\
+\hspace*{25mm}\fbox{$\displaystyle \sqrt[n]{z}=\sqrt[n]{r}\cdot
+\left( \cos\frac{\varphi+2k\pi}{n}+i\cdot \sin\frac{\varphi+2k\pi}{n}\right)$\hspace{6mm}$k=0,1,2\dots n-1$}
+
+\hfill{\fbox{\tiny{v1.01 by \textsf{tkr}}}}
+\end{document}

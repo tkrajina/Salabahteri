@@ -1,0 +1,289 @@
+\documentclass[10pt,oneside,a4paper]{report}
+% \linespread{1.3}
+\title{trigonometrija - salabahter}
+% \renewcommand{\familydefault}{cmss}
+\usepackage[croatian]{babel}
+\usepackage[dvips]{color}
+% \usepackage[dvips]{rotating}
+\usepackage{epsfig}
+\usepackage{floatflt}
+\addtolength{\hoffset}{-2cm}
+\addtolength{\voffset}{-2.5cm}
+\addtolength{\textwidth}{3cm}
+\addtolength{\textheight}{4cm}
+\pagestyle{empty}
+
+\begin{document}
+% & $0^\circ$ & $30^\circ$ & $45^\circ$ & $60^\circ$ & $90^\circ$ & $120^\circ$ & $135^\circ$ & $150^\circ$ & $180^\circ$ & $210^\circ$ & $225^\circ$ & $240^\circ$ & $270^\circ$ & $300^\circ$ & $315^\circ$ & $330^\circ$ & $360^\circ$ \\
+
+
+\begin{center}
+\fbox{\fbox{{\Huge \textsf{\textcolor{red}{Trigonometrija} - osnovne formule}}}}
+\end{center}
+\vspace{2mm}
+
+
+\noindent
+{\large \textsf{\underline{Definicija trigonometrijskih funkcija} -- u pravokutnom trokutu:}}
+\begin{floatingfigure}[r]{6cm}
+\epsfig{figure=fig/trokut.eps}
+\end{floatingfigure}
+
+
+\vspace{2mm}
+\fbox{$\displaystyle \textrm{sin}\alpha=\frac{\textrm{nasuprotna kateta}}{\textrm{hipotenuza}}=\frac ac$}
+
+\vspace{2mm}
+\fbox{$\displaystyle \textrm{cos}\alpha=\frac{\textrm{prile\v{z}e\'{c}a kateta}}{\textrm{hipotenuza}}=\frac bc$}
+
+\vspace{2mm}
+\fbox{$\displaystyle \textrm{tg}\alpha=\frac{\textrm{nasuprotna kateta}}{\textrm{prile\v{z}e\'{c}a kateta}}=\frac ab$}
+
+\vspace{2mm}
+\fbox{$\displaystyle \textrm{ctg}\alpha=\frac{\textrm{prile\v{z}e\'{c}a kateta}}{\textrm{nasuprotna kateta}}=\frac ba$}
+
+\vspace{4mm}
+\noindent
+{\large \textsf{\underline{Vrijednosti trigonometrijskih funkcija u nekim va\v{z}nijim kutevima:}}}
+\begin{center}
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{c||c|c|c|c|c|c|c|c|c|c}
+\scriptsize{\underline{stupnjevi:}} & $0^\circ$ & $30^\circ$ & $45^\circ$ & $60^\circ$ & $90^\circ$ & $120^\circ$ &  $150^\circ$ & $180^\circ$ & $270^\circ$ & $360^\circ$ \\
+\hline
+	\scriptsize{\underline{radijani:}} & 
+	$0$ & $\displaystyle \frac{\pi}6$ &
+	$\displaystyle \frac \pi 4$&
+	$\displaystyle \frac \pi 3$&
+	$\displaystyle \frac\pi 2$&
+	$\displaystyle \frac 23 \pi$&
+	$\displaystyle \frac 56 \pi$&
+	$\displaystyle \pi $&
+	$\displaystyle 1 \frac 12 \pi $&
+	$\displaystyle 2\pi $\\
+\hline
+\hline
+	sin &
+	0 &
+	$\displaystyle \frac 12$ &
+	$\displaystyle \frac{\sqrt{2}}2$ &
+	$\displaystyle \frac{\sqrt 3}2$&
+	1 &
+	$\displaystyle \frac{\sqrt 3}2$&
+	$\displaystyle \frac 12$&
+	0 &
+	-1 &
+	0 \\
+\hline	
+	cos &
+	1 &
+	$\displaystyle \frac {\sqrt 3}2$ &
+	$\displaystyle \frac{\sqrt{2}}2$ &
+	$\displaystyle \frac 12$&
+	0 &
+	$\displaystyle -\frac 12$&
+	$\displaystyle -\frac {\sqrt 3}2$&
+	-1 &
+	0 &
+	1 \\
+\hline	
+	tg &
+	0 &
+	$\displaystyle \frac {\sqrt 3}3$ &
+	1 &
+	$\displaystyle \sqrt 3$&
+	$\displaystyle \pm \infty$ &
+	$\displaystyle -\sqrt 3$ &
+	$\displaystyle -\frac{\sqrt{3}}3$ &
+	0 &
+	$\displaystyle \pm \infty$ &
+	$\displaystyle 0$ \\
+\hline
+	ctg &
+	$\displaystyle \pm \infty$ &
+	$\displaystyle \sqrt 3$ &
+	1 &
+	$\displaystyle \frac{\sqrt 3}3$&
+	0 &
+	$\displaystyle -\frac{\sqrt 3}3$&
+	$\displaystyle -\sqrt 3 $&
+	$\displaystyle \mp \infty$ &
+	0 &
+	$\displaystyle \mp \infty$ \\
+\end{tabular}
+\end{center}
+
+\vspace{2mm}
+\noindent
+{\large \textsf{\underline{Vrijednosti trigonometrijskih funkcija na jedini\v{c}noj kru\v{z}nici:}}}
+
+\vspace{4mm}
+\noindent
+\begin{minipage}[b]{3cm}
+\underline{Prvi kvadrant:}\\
+\hspace*{5mm}$\textrm{sin}\varphi>0$\\
+\hspace*{5mm}$\textrm{cos}\varphi>0$\\
+\hspace*{5mm}$\textrm{tg}\varphi>0$\\
+\hspace*{5mm}$\textrm{ctg}\varphi>0$\\
+\vspace{1cm}
+\end{minipage}
+\epsfig{figure=fig/I.eps}
+\hspace{7mm}
+\begin{minipage}[b]{3cm}
+\underline{Drugi kvadrant:}\\
+\hspace*{5mm}$\textrm{sin}\varphi>0$\\
+\hspace*{5mm}$\textrm{cos}\varphi<0$\\
+\hspace*{5mm}$\textrm{tg}\varphi<0$\\
+\hspace*{5mm}$\textrm{ctg}\varphi<0$\\
+\vspace{1cm}
+\end{minipage}
+\epsfig{figure=fig/II.eps}
+
+\vspace{7mm}
+\noindent
+\begin{minipage}[b]{3cm}
+\underline{Tre\'{c}i kvadrant:}\\
+\hspace*{5mm}$\textrm{sin}\varphi<0$\\
+\hspace*{5mm}$\textrm{cos}\varphi<0$\\
+\hspace*{5mm}$\textrm{tg}\varphi>0$\\
+\hspace*{5mm}$\textrm{ctg}\varphi>0$\\
+\vspace{1cm}
+\end{minipage}
+\epsfig{figure=fig/III.eps}
+\hspace{7mm}
+\begin{minipage}[b]{3cm}
+\underline{\v{C}etvrti kvadrant:}\\
+\hspace*{5mm}$\textrm{sin}\varphi<0$\\
+\hspace*{5mm}$\textrm{cos}\varphi>0$\\
+\hspace*{5mm}$\textrm{tg}\varphi<0$\\
+\hspace*{5mm}$\textrm{ctg}\varphi<0$\\
+\vspace{1cm}
+\end{minipage}
+\epsfig{figure=fig/IV.eps}
+
+\noindent
+{\large \textsf{\underline{Osnovne trigonometrijske formule:}}}\\
+\hspace*{30mm}	\fbox{$\displaystyle \textrm{sin}^2\alpha+\textrm{cos}^2\alpha =1$}
+		\hspace{5mm}
+		\fbox{$\displaystyle \textrm{tg} \alpha=\frac{\textrm{sin} \alpha}{\textrm{cos} \alpha}$}
+		\hspace{5mm}
+		\fbox{$\displaystyle \textrm{ctg} \alpha=\frac{\textrm{cos} \alpha}{\textrm{sin} \alpha}$}
+
+\newpage
+\noindent
+\begin{itemize}
+	\item \textbf{\textsf{Parnost i neparnost trigonometrijskih funkcija:}}\\
+		\fbox{$\textrm{sin}(-\alpha)=-\textrm{sin}\alpha$}
+		\hspace{5mm}
+		\fbox{$\textrm{cos}(-\alpha)=\textrm{cos}\alpha$}
+		\hspace{5mm}
+		\fbox{$\textrm{tg}(-\alpha)=-\textrm{tg}\alpha$}
+		\hspace{5mm}
+		\fbox{$\textrm{ctg}(-\alpha)=-\textrm{ctg}\alpha$}
+% 	\item \textbf{\textsf{Formule za redukciju (za $90^\circ < \alpha < 360^\circ$):}}
+% 	\begin{center}
+% 	\begin{tabular}{c||c|c|c|c}
+% 		& $\beta = 90^\circ\pm \alpha$ &
+% 		$\beta = 180^\circ\pm \alpha$ &
+% 		$\beta = 270^\circ\pm \alpha$ &
+% 		$\beta = 360^\circ- \alpha$ \\
+% 	\hline
+% 	\hline
+% 		$\textrm{sin}\beta$ &
+% 		$+\textrm{cos} \alpha$ &
+% 		$\mp\textrm{sin} \alpha$ &
+% 		$-\textrm{cos} \alpha$ &
+% 		$-\textrm{sin} \alpha$\\ 
+% 	\hline
+% 		$\textrm{cos}\beta$ &
+% 		$\mp\textrm{sin} \alpha$ &
+% 		$-\textrm{cos} \alpha$ &
+% 		$\pm\textrm{sin} \alpha$ &
+% 		$+\textrm{cos} \alpha$\\ 
+% 	\hline
+% 		$\textrm{tg}\beta$ &
+% 		$\mp\textrm{ctg} \alpha$ &
+% 		$\pm\textrm{tg} \alpha$ &
+% 		$\mp\textrm{ctg} \alpha$ &
+% 		$-\textrm{tg} \alpha$\\ 
+% 	\hline
+% 		$\textrm{ctg}\beta$ &
+% 		$\mp\textrm{tg} \alpha$ &
+% 		$\pm\textrm{ctg} \alpha$ &
+% 		$\mp\textrm{tg} \alpha$ &
+% 		$-\textrm{ctg} \alpha$\\ 
+% 	\end{tabular}
+% 	\end{center}
+	\item \textbf{\textsf{Izra\v{z}avanje jedne trigonometrijske funkcije pomo\'{c}u druge:}}\\
+	\hspace{2cm}\fbox{$\displaystyle
+	\textrm{sin}\alpha=\sqrt{1-\textrm{cos}^2\alpha}=\frac{\textrm{tg}\alpha}{\sqrt{1+\textrm{tg}^2\alpha}}=\frac
+	1{\sqrt{1+\textrm{ctg}^2\alpha}}$} \hspace{3mm}\fbox{$\displaystyle \cos\alpha=\sqrt{1-\textrm{sin}^2\alpha}=\frac{1}{\sqrt{1+\textrm{tg}^2\alpha}}=\frac {\textrm{ctg}\alpha}{\sqrt{1+\textrm{ctg}^2\alpha}}$}\\
+	\fbox{$\displaystyle \textrm{tg}\alpha=\frac{\sin\alpha}{\sqrt{1-\sin ^2\alpha}}=\frac{\sqrt{1-\cos ^2 \alpha}}{\cos \alpha}=\frac1{\textrm{ctg}\alpha}$}\hspace{4mm}
+	\fbox{$\displaystyle \textrm{ctg}\alpha=\frac{\sqrt{1-\sin ^2\alpha}}{\sin\alpha}=\frac{\cos \alpha}{\sqrt{1-\cos ^2 \alpha}}=\frac1{\textrm{tg}\alpha}$}\\
+	\item \textbf{\textsf{Funkcije zbroja i razlike kutova:}}\\
+		\fbox{$\sin (\alpha \pm \beta)=\sin \alpha \cos \beta \pm \cos \alpha \sin \beta$}
+		\hspace{1cm}
+		\fbox{$\cos (\alpha \pm \beta)=\cos \alpha \cos \beta \mp \sin \alpha \sin \beta$}\\
+		\hspace*{10mm}\fbox{$\displaystyle \textrm{tg}(\alpha \pm \beta)=\frac{\textrm{tg}\alpha \pm \textrm{tg}\beta}{1\mp \textrm{tg}\alpha \cdot \textrm{tg}\beta}$}
+		\hspace{10mm}\fbox{$\displaystyle \textrm{ctg}(\alpha \pm \beta)=\frac{\textrm{ctg}\alpha \cdot \textrm{ctg}\beta \mp 1}{ \textrm{ctg}\beta \pm \textrm{ctg}\alpha}$}
+	\item \textbf{\textsf{Funkcije dvostrukih kutova:}}
+		\fbox{$\sin 2\alpha=2\sin \alpha\cdot \cos \alpha$} 
+		\hspace{2mm}
+		\fbox{$\cos 2\alpha=\cos^2\alpha - \sin ^2 \alpha$}\\
+		\hspace*{52mm}\fbox{$\displaystyle \textrm{tg}2\alpha=\frac{2\textrm{tg}\alpha}{1-\textrm{tg}^2\alpha}$}
+		\hspace{2mm}
+		\fbox{$\displaystyle \textrm{ctg}2\alpha=\frac{\textrm{ctg}^2\alpha-1}{2\textrm{ctg}\alpha}$}
+	\item \textbf{\textsf{Funkcije polovi\v{c}nog kuta:}}
+		\fbox{$\displaystyle \sin \frac \alpha 2=\sqrt{\frac{1-\cos \alpha}2}$}
+		\hspace{2mm}
+		\fbox{$\displaystyle \cos \frac \alpha 2=\sqrt{\frac{1+\cos \alpha}2}$}\\
+		\fbox{$\displaystyle \textrm{tg}\frac\alpha 2=\sqrt{\frac{1-\cos \alpha}{1+\cos\alpha}}=\frac{1-\cos \alpha}{\sin\alpha}=\frac{\sin \alpha}{1+\cos\alpha}$}
+		\hspace{2mm}
+		\fbox{$\displaystyle \textrm{ctg}\frac\alpha 2=\sqrt{\frac{1+\cos \alpha}{1-\cos\alpha}}=\frac{1+\cos \alpha}{\sin\alpha}=\frac{\sin \alpha}{1-\cos\alpha}$}
+	\item \textbf{\textsf{Zbroj i razlika trigonometrijskih funkcija:}}\\
+		\hspace*{5mm}\fbox{$\displaystyle \sin \alpha+\sin \beta=2\cdot \sin  \frac{\alpha +\beta}2 \cdot \cos\frac{\alpha-\beta}2$}
+		\hspace{2mm}
+		\fbox{$\displaystyle \sin \alpha-\sin \beta=2\cdot \cos \frac{\alpha+\beta}2 \cdot \sin\frac{\alpha-\beta}2$}\\
+		\fbox{$\displaystyle \cos \alpha+\cos \beta=2\cdot \cos \frac{\alpha+\beta}2\cdot \cos\frac{\alpha-\beta}2$}
+		\hspace{2mm}
+		\fbox{$\displaystyle \cos \alpha-\cos \beta=-2\cdot \sin\frac{\alpha+\beta}2\cdot \sin\frac{\alpha-\beta}2$}\\
+		\hspace*{10mm}\fbox{$\displaystyle \textrm{tg}\alpha\pm \textrm{tg}\beta=\frac{\sin(\alpha\pm\beta)}{\cos \alpha\cdot \cos \beta}$}
+		\hspace{2mm}
+		\fbox{$\displaystyle \textrm{ctg}\alpha\pm \textrm{tg}\beta=\pm\frac{\sin(\alpha\pm\beta)}{\sin \alpha\cdot \sin \beta}$}\\
+		\hspace*{25mm}\fbox{$\displaystyle \textrm{tg}\alpha+ \textrm{ctg}\beta=\pm\frac{\cos(\alpha-\beta)}{\cos \alpha\cdot \sin \beta}$}
+		\hspace{2mm}
+		\fbox{$\displaystyle \textrm{ctg}\alpha- \textrm{tg}\beta=\pm\frac{\cos(\alpha \pm \beta)}{\sin \alpha\cdot \cos \beta}$}
+	\item \textbf{\textsf{Produkt funkcija:}}\\
+		\fbox{$\displaystyle \sin \alpha\sin \beta=\frac 12\left[ \cos(\alpha-\beta)-\cos(\alpha+\beta) \right]$}
+		\hspace{2mm}
+		\fbox{$\displaystyle \cos \alpha\cos \beta=\frac 12\left[ \cos(\alpha-\beta)+\cos(\alpha+\beta) \right]$}\\
+		\hspace*{40mm}\fbox{$\displaystyle \sin \alpha\cos \beta=\frac 12\left[ \sin(\alpha-\beta)+\sin(\alpha+\beta) \right]$}
+	\item \textbf{\textsf{\underline{Rje\v{s}avanje trokuta:}}}
+		\item \textsf{Sinusov pou\v{c}ak:}\hspace{5mm}\fbox{$\displaystyle \frac a{\sin \alpha}=\frac b{\sin \beta}=\frac c{\sin \gamma}$} 
+		\hspace{3mm} ili \hspace{3mm}
+		\fbox{$\displaystyle a:b:c=\sin \alpha :\sin \beta :\sin\gamma$}
+		\item \textsf{Kosinusov pou\v{c}ak:} \hspace{1mm}
+		\fbox{$a^2=b^2+c^2-2bc\cdot \cos \alpha$} 
+		\fbox{$b^2=a^2+c^2-2ac\cdot \cos \beta$} 
+		\fbox{$c^2=a^2+b^2-2ab\cdot \cos \gamma$} \\
+		\hspace*{33mm}
+		\fbox{$\displaystyle \cos\alpha=\frac{b^2+c^2-a^2}{2bc}$}
+		\hspace{7mm}
+		\fbox{$\displaystyle \cos\beta=\frac{a^2+c^2-b^2}{2ac}$}
+		\hspace{6mm}
+		\fbox{$\displaystyle \cos\gamma=\frac{a^2+b^2-c^2}{2ab}$}
+	\item \textbf{\textsf{\underline{Jednostavne trigonometrijske jednad\v{z}be:}}}\\
+		\hspace*{34mm}
+		\begin{tabular}{c|c}
+		$\sin x=a$ &  $x=(-1)^k\sin^{-1}a+k\pi$\\
+		\hline
+		$\cos x=a$ &  $x=\pm\cos^{-1}a+2k\pi$\\
+		\hline
+		$\textrm{tg}\hspace{1mm} x=a$ &  $x=\textrm{tg}^{-1}a+k\pi$\\
+		\hline
+		$\textrm{ctg}\hspace{1mm} x=a$ &  $x=\textrm{ctg}^{-1}a+k\pi$\\
+		\end{tabular}
+\end{itemize}
+\hfill{\fbox{\tiny{v1.2 by \textsf{tkr}}}}
+
+
+\end{document}
